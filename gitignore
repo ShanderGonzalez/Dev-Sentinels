@@ -1,4 +1,0 @@
-# Entorno virtual
-.env/*
-.app/__pycache__/*
-.braille_translator.db
