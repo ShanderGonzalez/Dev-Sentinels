@@ -1,0 +1,158 @@
+header h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.center-content {
+    text-align: center;
+    font-size: 1.5em; 
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+#conocenos a{
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.addButton {
+    background: #0c3b6f;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+#conocenos:hover{
+    color: rgb(100, 180, 233);
+}
+
+.all {
+    padding: 0px 80px;
+}
+
+.content {
+    display: flex;
+}
+
+.tipos {
+    padding: 0px;
+    margin: 0px;
+    font-size: 2em;
+}
+
+.content-traduccion{
+    flex-grow: 1;
+    padding: 0px 50px;
+    margin-left: 50px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    
+}
+
+#aviso{
+    font-size: 15px;
+    color: #f00;
+}
+
+#spanishText {
+    width: 90%; 
+    height: 100px; 
+    resize: none; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.traducir{
+    background: #060606;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.traducir:hover{
+    background: #2f2f2f;
+}
+
+div a{
+    text-decoration: none;
+    color: #e1e0e0;
+    font-size: 25px;
+}
+
+div a:hover{
+    color: rgb(100, 180, 233);
+}
+
+.linkButton {
+    background: #0c3b6f;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 20px 10px;
+}
+
+.linkIMG{
+    width: 20px;
+}
+
+.espacioTraduccion{
+    width: 90%; 
+    height: 100px; 
+    border: solid;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.bolita {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.bolita.selected {
+    background-color: black; /* Cambia el color cuando está seleccionado */
+}
+
+.conjunto-braille {
+    display: block; /* Cambia a bloque para que los elementos estén en una columna */
+    margin-bottom: 10px; /* Espacio entre cada conjunto de braille */
+}
+
+.next{
+    background: #7a0f0f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    margin-right: 25px;
+}
+
+.logoConocenos {
+    width: 200px;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+.infoDEV {
+    text-align: justify;
+}

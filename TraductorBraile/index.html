@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Braile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <div>
+            <hr>
+            <div class="logo-container">
+                <img class="logo" src="Imagenes/DevSentinelsLogo.jpeg" alt="Logo">
+                <p id="conocenos" class="addButton">
+                    <a href="conocenos.html">CONOCENOS</a>
+                </p>
+            </div>
+            <hr>
+        </div> 
+        <div>
+            <header>
+                <h1>Traductor Español - Braille</h1>
+            </header>
+        </div>
+    
+        <div class="content">
+            <div class="tipos">
+                <p style="text-align: center;">Tipos de Traducción</p>
+
+                <div class="linkButton">
+                    <img class="linkIMG" src="Imagenes/cambio.png">
+                    <a href="index.html">Español a Braille</a>
+                </div>
+                <div class="linkButton">
+                    <img class="linkIMG" src="Imagenes/cambio.png">
+                    <a href="BrailleToSpanish.html">Braille a Español</a>
+                </div>
+            </div>
+
+
+            <div class="content-traduccion">
+                <div class="center-content">Traduce un texto de español a braille</div>
+                <p><h2 style="text-align: center;">Texto en Español</h2></p>
+                <p id="aviso">*Texto inválido: no se permiten caracteres especiales</p>
+                <textarea id="spanishText" placeholder="Escribe el texto en español aquí..."></textarea>
+                <button class="traducir"> Traducir a Braille</button>
+                <div>
+                    <p><h2 style="text-align: center;">Texto en Braille</h2></p>
+                    <div class="espacioTraduccion">
+
+                    </div>
+                    <button class="traducir"> Impresion en Espejo</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
