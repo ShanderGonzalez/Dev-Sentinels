@@ -5,7 +5,7 @@ header h1 {
 
 .center-content {
     text-align: center;
-    font-size: 1.5em; 
+    font-size: 1.5em;
     color: #808080;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,7 +23,7 @@ header h1 {
     margin: 0;
 }
 
-#conocenos a{
+#conocenos a {
     margin: 0;
     font-size: 20px;
     text-decoration: none;
@@ -37,7 +37,7 @@ header h1 {
     margin: 0 10px;
 }
 
-#conocenos:hover{
+#conocenos:hover {
     color: rgb(100, 180, 233);
 }
 
@@ -55,29 +55,29 @@ header h1 {
     font-size: 2em;
 }
 
-.content-traduccion{
+.content-traduccion {
     flex-grow: 1;
     padding: 0px 50px;
     margin-left: 50px;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
-    
+
 }
 
-#aviso{
+#aviso {
     font-size: 15px;
     color: #f00;
 }
 
 #spanishText {
-    width: 90%; 
-    height: 100px; 
-    resize: none; 
+    width: 90%;
+    height: 100px;
+    resize: none;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.traducir{
+.traducir {
     background: #060606;
     color: #fff;
     border-radius: 5px;
@@ -85,17 +85,17 @@ header h1 {
     width: 150px;
 }
 
-.traducir:hover{
+.traducir:hover {
     background: #2f2f2f;
 }
 
-div a{
+div a {
     text-decoration: none;
     color: #e1e0e0;
     font-size: 25px;
 }
 
-div a:hover{
+div a:hover {
     color: rgb(100, 180, 233);
 }
 
@@ -106,13 +106,13 @@ div a:hover{
     margin: 20px 10px;
 }
 
-.linkIMG{
+.linkIMG {
     width: 20px;
 }
 
-.espacioTraduccion{
-    width: 90%; 
-    height: 100px; 
+.espacioTraduccion {
+    width: 90%;
+    height: 100px;
     border: solid;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -125,19 +125,23 @@ div a:hover{
     border-radius: 50%;
     display: inline-block;
     margin: 5px;
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
 }
 
 .bolita.selected {
-    background-color: black; /* Cambia el color cuando está seleccionado */
+    background-color: black;
+    /* Cambia el color cuando está seleccionado */
 }
 
 .conjunto-braille {
-    display: block; /* Cambia a bloque para que los elementos estén en una columna */
-    margin-bottom: 10px; /* Espacio entre cada conjunto de braille */
+    display: block;
+    /* Cambia a bloque para que los elementos estén en una columna */
+    margin-bottom: 10px;
+    /* Espacio entre cada conjunto de braille */
 }
 
-.next{
+.next {
     background: #7a0f0f;
     color: #fff;
     border-radius: 5px;
@@ -148,8 +152,8 @@ div a:hover{
 
 .logoConocenos {
     width: 200px;
-    height: auto; 
-    display: block; 
+    height: auto;
+    display: block;
     margin: 0 auto;
 }
 
