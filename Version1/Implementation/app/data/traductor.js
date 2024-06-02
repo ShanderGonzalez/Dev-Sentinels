@@ -89,6 +89,24 @@ class Traductor {
         return brailleTexto.trim();
     }
 
+    traducirBrailleAEspanol(braille) {
+        let brailleArray = braille.split(" ");
+        let texto = "";
+        console.log(brailleArray);
+        for (let brailleCode of brailleArray) {
+            if (brailleCode === "") {
+                texto += " ";
+                continue;
+            }
+            let caracter = this.diccionarioBraille.getBrailleLetra(brailleCode);
+            if (caracter) {
+                texto += caracter;
+            }
+        }
+
+        return texto.trim();
+    }
+
     getBrailleMatrix(brailleCode) {
         const brailleArray = brailleCode.split('').map(Number);
         const matrix = [0, 0, 0, 0, 0, 0];

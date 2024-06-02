@@ -1,6 +1,6 @@
 class BrailleDictionary {
     constructor() {
-        this.alfabetoBrailleEspanol = {
+        this.alfabetoEspanolBraille = {
             'a': '1',
             'b': '12',
             'c': '14',
@@ -36,7 +36,7 @@ class BrailleDictionary {
             'ü': '1256'
         };
 
-        this.alfabetoBrailleEspanolMayus = {
+        this.alfabetoEspanolBrailleMayus = {
             'A': '1',
             'B': '12',
             'C': '14',
@@ -139,13 +139,30 @@ class BrailleDictionary {
             '8': '1256',
             '9': '246'
         };
+
+        // Invertir los diccionarios
+        this.alfabetoEspanolBrailleInvertido = this.invertirDiccionario(this.alfabetoEspanolBraille);
+        this.alfabetoEspanolBrailleMayusInvertido = this.invertirDiccionario(this.alfabetoEspanolBrailleMayus);
+        this.signosPuntuacionInvertido = this.invertirDiccionario(this.signosPuntuacion);
+        this.signosAuxiliaresInvertido = this.invertirDiccionario(this.signosAuxiliares);
+        this.numerosBrailleInvertido = this.invertirDiccionario(this.numerosBraille);
+        this.numeroComputarizadoInvertido = this.invertirDiccionario(this.numeroComputarizado);
+    }
+
+    invertirDiccionario(diccionario) {
+        const diccionarioInvertido = {};
+        for (let clave in diccionario) {
+            const valor = diccionario[clave];
+            diccionarioInvertido[valor] = clave;
+        }
+        return diccionarioInvertido;
     }
 
     getLetraBraille(letra) {
-        if (this.alfabetoBrailleEspanol[letra]) {
-            return this.alfabetoBrailleEspanol[letra];
-        } else if (this.alfabetoBrailleEspanolMayus[letra]) {
-            return this.alfabetoBrailleEspanolMayus[letra];
+        if (this.alfabetoEspanolBraille[letra]) {
+            return this.alfabetoEspanolBraille[letra];
+        } else if (this.alfabetoEspanolBrailleMayus[letra]) {
+            return this.alfabetoEspanolBrailleMayus[letra];
         } else {
             return null;
         }
@@ -166,6 +183,36 @@ class BrailleDictionary {
             return this.numerosBraille[numero];
         } else if (this.numeroComputarizado[numero] && esNumComp) {
             return this.numeroComputarizado[numero];
+        } else {
+            return null;
+        }
+    }
+
+    getBrailleLetra(braille){
+        if (this.alfabetoEspanolBrailleInvertido[braille]) {
+            return this.alfabetoEspanolBrailleInvertido[braille];
+        } else if (this.alfabetoEspanolBrailleMayusInvertido[braille]) {
+            return this.alfabetoEspanolBrailleMayusInvertido[braille];
+        } else {
+            return null;
+        }
+    }
+
+    getBrailleSigno(braille){
+        if (this.signosPuntuacionInvertido[braille]) {
+            return this.signosPuntuacionInvertido[braille];
+        } else if (this.signosAuxiliaresInvertido[braille]) {
+            return this.signosAuxiliaresInvertido[braille];
+        } else {
+            return null;
+        }
+    }
+
+    getBrailleNumero(braille, esNumComp){
+        if (this.numerosBrailleInvertido[braille] && !esNumComp) {
+            return this.numerosBrailleInvertido[braille];
+        } else if (this.numeroComputarizadoInvertido[braille] && esNumComp) {
+            return this.numeroComputarizadoInvertido[braille];
         } else {
             return null;
         }
